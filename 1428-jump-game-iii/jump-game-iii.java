@@ -4,13 +4,13 @@ class Solution {
         return false;
 
         if(arr[start] ==0)
-        return true;
+        return jump[start] =true;
 
         jump[start] = true;
        boolean a= solve(arr,start-arr[start],jump);
       boolean b=  solve(arr, start+arr[start] , jump);
 
-    return a || b;
+    return jump[start] = a || b;
 }
 
     public boolean canReach(int[] arr, int start) {
