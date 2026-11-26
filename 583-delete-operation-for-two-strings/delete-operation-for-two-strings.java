@@ -14,8 +14,8 @@ class Solution {
             }
         }
         int ans = dp[0][0];
-        int insertion = n-ans;
-        int deletion  = m-ans;
-        return insertion + deletion;
+        int deletion1 = n-ans;
+        int deletion2  = m-ans;
+        return deletion1 + deletion2;
     }
 }
